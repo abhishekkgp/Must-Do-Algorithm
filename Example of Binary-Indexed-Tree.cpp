@@ -1,3 +1,5 @@
+Problem Link: https://leetcode.com/problems/create-sorted-array-through-instructions/ 
+
 Given an integer array A of instructions, you are asked to create a sorted array from the elements in A. 
 You start with an empty container nums. For each element from left to right in A, insert it into nums. 
 
@@ -10,9 +12,7 @@ For example, if inserting element 3 into nums = [1,2,3,5], the cost of insertion
 
 Return the total cost to insert all elements from instructions into nums. Since the answer may be large, return it modulo 109 + 7.
 
-Problem Link: https://leetcode.com/problems/create-sorted-array-through-instructions/ 
-
-I used Binary Indexed Tree (or Fenwick Tree) to solve this problem.
+Solution Approch:  I used Binary Indexed Tree (or Fenwick Tree) to solve this problem.
  
  Time complexity: "O(nlogn)"                                 [where logn for each update and getSum and we are doing over n element so overall O(nlogn)]
   Space complexity: "O(1e5+1) | but we can also say O(m)"    [where m=1e5+1 or max value of all element present in A in this case]
