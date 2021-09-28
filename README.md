@@ -14,5 +14,6 @@ These algorithm must be done if you are preparing for placements:
 10. KMP
 11. DSU
 12. Knapsack 0-1
+13. LRU cache
 
-->Go to leetcode do atleast one question releated to these above topic
+->Go to leetcode do atleast one question from each topic
