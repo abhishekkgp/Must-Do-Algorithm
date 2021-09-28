@@ -59,19 +59,19 @@ int main()
 	{
 		update(BITree,i+1,A[i]); //In i+1, adding 1 because BITree is 1 based index
 	}
-	cout << "Sum of elements in arr[0..5] is: "<< getSum(BITree, 6); 
+	cout << "Sum of elements in A[0..5] is: "<< getSum(BITree, 6); 
 	// In above 5+1 adding 1 because BITree is 1 based index
 
 	// Let use test the update operation
-	A[3] += 6;
+	A[3] += 6; // adding 6 to 4th element
 	update(BITree, 3, 6); //Update BIT for above change in A[]
-	cout << "\nSum of elements in arr[0..5] after update is: " << getSum(BITree, 5+1);
+	cout << "\nSum of elements in A[0..5] after update is: " << getSum(BITree, 5+1);
 
 	return 0;
 }
 
 /*
 # output:
-Sum of elements in arr[0..5] is: 12
-Sum of elements in arr[0..5] after update is: 18
+Sum of elements in A[0..5] is: 12
+Sum of elements in A[0..5] after update is: 18
 */
