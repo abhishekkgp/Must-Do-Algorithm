@@ -12,17 +12,17 @@ Space complexity: O(n)         [ in storing BITree array]
 Note: 
   1. Each a) update  b)getSum till ith element --> takes only log(n) time here. 
   2. Using brute force(without Binary index tree) inserting each updating sum takes O(n) time. so updating m elements takes O(mn) time. [Think]
-     
-------------------------------------------------------------------------------------------------------------------------------------------------------
-// C++ code to demonstrate operations of Binary Index Tree
-#include<bits/stdc++.h>
-using namespace std;
+
 
 /*		 
 n --> No. of elements present in input array.
 BITree[0..n] --> 1-based Array that represents Binary Indexed Tree.
-arr[0..n-1] --> 0-based Input array for which prefix sum is evaluated. 
+A[0..n-1] --> 0-based Input array for which prefix sum is evaluated. 
 */
+------------------------------------------------------------------------------------------------------------------------------------------------------
+// C++ code to demonstrate operations of Binary Index Tree
+#include<bits/stdc++.h>
+using namespace std;
 
 // Returns sum of arr[0..index]. This function assumes that the array is preprocessed and 
 // partial sums of array elements are stored in BITree[].
@@ -55,10 +55,10 @@ int main()
 	int n = sizeof(A)/sizeof(A[0]);
 	
 	vector<int> BITree(n+1,0);
-  for(int i=0;i<n;i++)
-  {
-      update(BITree,i+1,A[i]); //In i+1, adding 1 because BITree is 1 based index
-  }
+	for(int i=0;i<n;i++)
+	{
+		update(BITree,i+1,A[i]); //In i+1, adding 1 because BITree is 1 based index
+	}
 	cout << "Sum of elements in arr[0..5] is: "<< getSum(BITree, 6); 
 	// In above 5+1 adding 1 because BITree is 1 based index
 
