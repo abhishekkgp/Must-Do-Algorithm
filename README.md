@@ -10,10 +10,11 @@ These algorithm must be done if you are preparing for placements:
 6. Prime Factorization using Sieve O(log n)  ❌
 7. LCSreturns ❌
 8. Graph 
----> i.Shortest Path
+---> 1.Shortest Path
       ->a.Dijkstra ✔️
----> ii.Minimum Spanning
+---> 2.Minimum Spanning
       ->a. Kruskals ✔️
+      ->b. Prim's ✔️
 9. Strongly Connected Components ❌
 10. KMP ❌
 11. DSU ❌
