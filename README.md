@@ -9,12 +9,17 @@ These algorithm must be done if you are preparing for placements:
 5. Critical conn Graph ❌
 6. Prime Factorization using Sieve O(log n)  ❌
 7. LCSreturns ❌
-8. Dijkstra ✔️
+8.Graph 
+---> i.Shortest Path
+      ->a.Dijkstra ✔️
+---> ii.Minimum spanning
+      ->a. Kruskals ✔️
 9. Strongly Connected Components ❌
-10. KMP
-11. DSU ❌
-12. Knapsack 0-1 ✔️
-13. LRU cache ✔️
+10. KMP ❌
+12. DSU ❌
+13. Knapsack 0-1 ✔️
+14. LRU cache ✔️
+
 
 ->Go to leetcode do atleast one question from each topic
 
