@@ -17,7 +17,6 @@ class Solution
 	//Function to return list containing vertices in Topological order. 
 	vector<int> TopologicalSort(int V, vector<int> adj[])  // function given as input to solve
 	{
-	    // code here
 	    vector<int> visited(V,0); // checking nodes are visited or not
 	    vector<int> ans;
 	    for(int i=0;i<V;i++)
