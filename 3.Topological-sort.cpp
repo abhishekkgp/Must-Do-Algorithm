@@ -1,7 +1,7 @@
 PROBLEM DESCRIPTION:
 Given a Directed Acyclic Graph (DAG) with V vertices and E edges, Find any Topological Sorting of that Graph.
 
-  You have to complete function "TopologicalSort" having V(number of vertex from 0 to V-1) and vector of array adj.
+  You have to complete function "TopologicalSort" having V(number of vertex from 0 to V-1) and vector of array adj as input.
       adj[i] -> contains all the nodes which can be directed from node i. 
 
   You need to return array from "TopologicalSort" function in which array elements are in topological sort.
