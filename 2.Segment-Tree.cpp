@@ -87,8 +87,69 @@ public:
 
 
 ==========================================================================================================================================================
-//Method-2
-  
-  
+
+//Method-2: Using Binary Index Tree
+/*
+Time complexity: O(NlogN)--> for constructing N size BITree. where each update takes O(logN)
+                          -> each update and Query(sum range) will take O(logN) time.
+Space Complexity: O(N) --> for making BITree array
+
+
+*/
+ class NumArray {
+    vector<int> BITree;
+    vector<int> A;
+    int n;
+public:
+    NumArray(vector<int>& nums) {
+        BITree.resize(nums.size()+1,0);
+        A=nums;
+        n=nums.size()+1;
+        for(int i=0;i<nums.size();i++)
+        {
+            getUpdate(i+1,nums[i]);
+        }
+    }
+    
+    void update(int index, int val) {
+        getUpdate(index+1,val-A[index]);
+        A[index]=val;
+    }
+    
+    int sumRange(int left, int right) {
+        int left_sum=getSum(left);
+        int right_sum=getSum(right+1);
+        
+        return right_sum-left_sum;
+    }
+    
+    int getSum(int x)
+    {
+        int sum=0;
+        while(x>0)
+        {
+            sum+=BITree[x]; 
+            x-= x&(-x);
+        }
+        return sum;
+    }
+    void getUpdate(int index, int val)
+    {
+        while(index<n)
+        {
+            //cout<<"here2awqdqdqd";
+            BITree[index]+=val;
+            //cout<<"herexx: "<<index<<" "<<index+(index & (-index))<<endl;
+            index+=index & (-index);
+        }
+    }
+};
+
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * NumArray* obj = new NumArray(nums);
+ * obj->update(index,val);
+ * int param_2 = obj->sumRange(left,right);
+ */
   
   
