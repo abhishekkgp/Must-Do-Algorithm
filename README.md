@@ -3,7 +3,7 @@
 
 These algorithm must be done if you are preparing for placements:
 1. Binary Index Tree or Fenwick Tree ✔️
-2. Segment Tree ❌
+2. Segment Tree ✔️
 3. Topological Sort ✔️
 4. Line Sweep ❌
 5. Critical conn Graph ❌
