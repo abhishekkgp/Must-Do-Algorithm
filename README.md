@@ -20,7 +20,7 @@ These algorithm must be done if you are preparing for placements:
 11. DSU ❌
 12. Knapsack 0-1 ✔️
 13. LRU cache ✔️
-14. Heap
+14. Heap ✔️
 
 
 ->Go to leetcode do atleast one question from each topic
