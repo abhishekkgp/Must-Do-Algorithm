@@ -21,6 +21,7 @@ These algorithm must be done if you are preparing for placements:
 12. Knapsack 0-1 ✔️
 13. LRU cache ✔️
 14. Heap ✔️
+15. Red Black Tree
 
 
 ->Go to leetcode do atleast one question from each topic
