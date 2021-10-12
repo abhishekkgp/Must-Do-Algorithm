@@ -6,7 +6,7 @@ These algorithm must be done if you are preparing for placements:
 2. Segment Tree ✔️
 3. Topological Sort ✔️
 4. Line Sweep ✔️
-5. Critical Connections in a Network ❌
+5. Critical Connections in a Network ✔️
 6. Prime Factorization using Sieve O(log n)  ❌
 7. LCSreturns ❌
 8. Graph 
