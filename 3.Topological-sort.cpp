@@ -5,7 +5,8 @@ Given a Directed Acyclic Graph (DAG) with V vertices and E edges, Find any Topol
       adj[i] -> contains all the nodes which can be directed from node i. 
 
   You need to return array from "TopologicalSort" function in which array elements are in topological sort.
- 
+ Note: Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge u v, 
+	vertex u comes before v in the ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
 
 Time Complexity: O(V+E)  [as we are visting each verteces and edges once]
 Auxiliary space: O(V)   [ as keeping track using visted vector to check either noed are visited or not]
@@ -40,3 +41,8 @@ class Solution
 	    return;
 	}
 };
+
+
+/*
+See example and explanation here: https://www.geeksforgeeks.org/topological-sorting/ 
+*/
