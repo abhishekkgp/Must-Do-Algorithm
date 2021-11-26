@@ -16,7 +16,7 @@ These algorithm must be done if you are preparing for placements:
       ->a. Kruskals ✔️
       ->b. Prim's ✔️
 9. Strongly Connected Components ❌
-10. KMP ❌
+10. KMP ✔️
 11. DSU ❌
 12. Knapsack 0-1 ✔️
 13. LRU cache ✔️
